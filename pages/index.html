@@ -3,20 +3,31 @@
 {% block title %}{% parent %}{% endblock %}
 
 {% block content %}
+{% set data = data|sort('publish_date', true) %}
 {% set data = cms.posts %}
 
 <div id="cycle">
 
+   {% for item in cms.posts %}
+  {% for image in item.gallery %}
 
-{% for object in data %}
-
-    <div class="art">
-    	<img src="{{ object.gallery|first|imageSize(500) }}" alt="{{ object.name }}"/>
+    <div class="art">  
+    <img src="{{ image|imageSize(500) }}" alt="{{ object.name }}"/>
     </div>
 
+{% endfor %}
 {% endfor %}
 
 
 
+
+</div>
+
+
+
+  
+
+  
+  
 
 {% endblock %}
