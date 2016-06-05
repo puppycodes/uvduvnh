@@ -2,3 +2,10 @@ body {
   padding: 40px;
   max-width: 1000px;
 }
+
+
+.art {
+	width:100px;
+	height:100px;
+	font-size:200px;
+}
