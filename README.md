@@ -1,6 +1,8 @@
-## This is a Webhook powered website.
+## Webhook preprocessor theme
 
-This is the boilerplate readme installed whenever you create a [Webhook CMS](http://www.webhook.com) powered site. You should probably replace it with information specific to your site.
+This theme builds a grunt file and installs the needed
+Node modules to preprocess Sass, Less and Coffescript
+files.
 
-* [Documentation for users found here.](http://webhook.com/docs/)
-* [Documentation for code contributors found here.](https://github.com/webhook/webhook-generate/blob/master/CONTRIBUTING.md)
+Once installed, you'll need your restart your Webhook
+runserver for the watch command to properly fire.
